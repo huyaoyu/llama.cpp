@@ -1124,7 +1124,7 @@ endif()
 
 # ggml
 
-add_library(ggml OBJECT
+add_library(ggml STATIC
             ggml.c
             ggml.h
             ggml-alloc.c
@@ -1160,7 +1160,7 @@ endif()
 
 # llama
 
-add_library(llama
+add_library(llama STATIC
             llama.cpp
             llama.h
             unicode.h
